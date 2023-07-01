@@ -1,7 +1,4 @@
-package com.xh.bbs.entity;
-
-import java.util.ArrayList;
-import java.util.List;
+package cn.bistu.bbs.entity;
 
 /**
  * 用户实体类

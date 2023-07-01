@@ -1,8 +1,8 @@
 package cn.bistu.bbs.dao;
 
-import java.util.List;
+import cn.bistu.bbs.entity.UserEntity;
 
-import com.xh.bbs.entity.UserEntity;
+import java.util.List;
 
 public interface UserDaoInf {
 
