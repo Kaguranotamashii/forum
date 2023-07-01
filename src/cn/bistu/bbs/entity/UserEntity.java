@@ -1,4 +1,4 @@
-package com.xh.bbs.entity;
+package cn.bistu.bbs.entity;
 
 import java.util.ArrayList;
 import java.util.List;

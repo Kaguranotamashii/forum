@@ -2,7 +2,7 @@ package cn.bistu.bbs.service;
 
 import java.util.List;
 
-import com.xh.bbs.entity.UserEntity;
+import cn.bistu.bbs.entity.UserEntity;
 
 public interface UserServiceInf {
 

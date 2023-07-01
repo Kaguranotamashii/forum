@@ -2,7 +2,7 @@ package cn.bistu.bbs.servlet;
 
 import cn.bistu.bbs.service.UserServiceInf;
 import cn.bistu.bbs.service.impl.UserServiceImpl;
-import com.xh.bbs.entity.UserEntity;
+import cn.bistu.bbs.entity.UserEntity;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -41,8 +41,9 @@ public class LoginServlet extends HttpServlet {
         out.println("<script type='text/javascript' src='js/jquery.easyui.min.js'></script>");
 
         if(user1!=null){
-            req.getSession().setAttribute("user", user);
-            resp.sendRedirect("forumList");
+            System.out.println("登录成功");
+            req.getSession().setAttribute("user", user1);
+            resp.sendRedirect("forumlist.jsp");
         }else{
             String html = "<div id='confirmdialog' class='easyui-dialog' title='消息确认' style='width:300px;height:160px;padding:10px'";
             html = html + "data-options=\"iconCls: 'icon-no',buttons: [{text:'确定',iconCls:'icon-ok',handler:function(){$('#confirmdialog').dialog('close');window.location.href='login.jsp';}}]\"";

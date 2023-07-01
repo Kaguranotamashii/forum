@@ -11,7 +11,7 @@ import java.util.List;
 
 import cn.bistu.bbs.dao.UserDaoInf;
 import cn.bistu.bbs.utils.JdbcUtil;
-import com.xh.bbs.entity.UserEntity;
+import cn.bistu.bbs.entity.UserEntity;
 
 
 public class UserDaoImpl implements UserDaoInf {

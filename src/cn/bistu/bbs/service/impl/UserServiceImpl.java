@@ -3,7 +3,7 @@ package cn.bistu.bbs.service.impl;
 import cn.bistu.bbs.dao.UserDaoInf;
 import cn.bistu.bbs.dao.impl.UserDaoImpl;
 import cn.bistu.bbs.service.UserServiceInf;
-import com.xh.bbs.entity.UserEntity;
+import cn.bistu.bbs.entity.UserEntity;
 
 import java.util.List;
 
