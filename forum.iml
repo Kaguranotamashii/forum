@@ -22,5 +22,6 @@
     <orderEntry type="library" exported="" scope="PROVIDED" name="Tomcat 8.5.69" level="application_server_libraries" />
     <orderEntry type="library" name="bootstrap" level="application" />
     <orderEntry type="library" name="bootstrap-theme" level="application" />
+    <orderEntry type="library" name="jsp-api" level="project" />
   </component>
 </module>
