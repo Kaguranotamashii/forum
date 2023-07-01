@@ -48,7 +48,7 @@ public class UserDaoImpl implements UserDaoInf {
     public int addUser(UserEntity user) {
         Connection conn = null;
         PreparedStatement ps = null;
-        String sql = "insert into userS(userid,username,userpassword,useremail,isAdmin) values(?,?,?,?,?,?,?,?)";
+        String sql = "insert into users(userid,username,userpassword,useremail,isAdmin) values(?,?,?,?,?,?,?,?)";
 
         System.out.println(user.getUserid());
 

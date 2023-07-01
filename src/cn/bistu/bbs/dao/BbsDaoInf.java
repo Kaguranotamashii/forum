@@ -1,4 +1,4 @@
-package com.xh.bbs.dao;
+package cn.bistu.bbs.dao;
 
 import java.util.List;
 
