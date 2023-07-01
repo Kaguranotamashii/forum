@@ -30,16 +30,25 @@ public class LoginServlet extends HttpServlet {
 
         System.out.println(user);
         System.out.println(pwd);
+
+
+        resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
+
         out.println("<link rel='stylesheet' type='text/css' href='css/easyui.css' />");
         out.println("<link rel='stylesheet' type='text/css' href='css/icon.css' />");
         out.println("<script type='text/javascript' src='js/jquery-1.11.2.js'></script>");
         out.println("<script type='text/javascript' src='js/jquery.easyui.min.js'></script>");
 
-        String html = "<div id='confirmdialog' class='easyui-dialog' title='消息确认' style='width:300px;height:160px;padding:10px'";
-        html = html + "data-options=\"iconCls: 'icon-no',buttons: [{text:'确定',iconCls:'icon-ok',handler:function(){$('#confirmdialog').dialog('close');window.location.href='login.jsp';}}]\"";
-        html = html + ">用户名或密码有错!</div>";
-        out.print(html);
+        if(user1!=null){
+            req.getSession().setAttribute("user", user);
+            resp.sendRedirect("forumList");
+        }else{
+            String html = "<div id='confirmdialog' class='easyui-dialog' title='消息确认' style='width:300px;height:160px;padding:10px'";
+            html = html + "data-options=\"iconCls: 'icon-no',buttons: [{text:'确定',iconCls:'icon-ok',handler:function(){$('#confirmdialog').dialog('close');window.location.href='login.jsp';}}]\"";
+            html = html + ">用户名或密码有错!</div>";
+            out.print(html);
+        }
         out.flush();
         out.close();
 
