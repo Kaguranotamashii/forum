@@ -3,8 +3,7 @@ use forum;
 
 create table users
 (
-    userid int auto_increment
-        primary key,
+    userid int auto_increment primary key,
     username varchar(255) null,
     useremail varchar(255) null,
     userpassword varchar(255) null,
@@ -20,8 +19,7 @@ create table forum
     content text null,
     created_at timestamp null,
     updated_at timestamp null,
-    constraint forum_ibfk_1
-        foreign key (userid) references users (userid)
+    constraint forum_ibfk_1 foreign key (userid) references users (userid)
 );
 
 create index user_id
@@ -38,3 +36,5 @@ INSERT INTO forum.users (userid, username, useremail, userpassword, isAdmin) VAL
 INSERT INTO forum.forum (fid, userid, title, content, created_at, updated_at) VALUES (1, 1, 'First Post', 'This is the first post content.', '2023-06-30 14:00:00', '2023-06-30 14:00:00');
 INSERT INTO forum.forum (fid, userid, title, content, created_at, updated_at) VALUES (2, 1, 'Second Post', 'This is the second post content.', '2023-06-30 15:00:00', '2023-06-30 15:30:00');
 INSERT INTO forum.forum (fid, userid, title, content, created_at, updated_at) VALUES (3, 2, 'Third Post', 'This is the third post content.', '2023-06-30 16:00:00', '2023-06-30 16:30:00');
+
+
