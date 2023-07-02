@@ -1,5 +1,8 @@
 package cn.bistu.bbs.entity;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * 用户实体类
  */

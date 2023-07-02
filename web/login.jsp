@@ -60,7 +60,7 @@
           <div class="col-sm-5 col-sm-offset-3">
             <input type="submit" value="登录" class="btn btn-xs btn-primary">
             <input type="reset" value="重置" class="btn btn-xs btn-warning">
-            <a href="zhuce.jsp" class="btn btn-xs btn-default">点我注册</a>
+            <a href="register.jsp" class="btn btn-xs btn-default">点我注册</a>
           </div>
         </div>
 
